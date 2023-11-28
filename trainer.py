@@ -193,7 +193,7 @@ class Trainer():
             with torch.no_grad():
                 loss, regret_mean_bidder, regret_max_batch, IR_mean_bidder,IR_max_batch,Budget_mean_bs,Budget_max_bs,profit = \
                     loss_function(self.mechanism, self.lamb_r, self.rho_r, self.lamb_i, self.rho_i, self.lamb_b, self.rho_b,
-                              batch_indices, data, misreports, self.budget / args.n_bid)
+                              batch_indices, data, misreports, self.budget / args.norm)
             loss_sum += loss.item() * len(batch_indices)
             regret_sum += regret_mean_bidder.mean().item() * len(batch_indices)
             regret_max = max(regret_max, regret_max_batch.item())
