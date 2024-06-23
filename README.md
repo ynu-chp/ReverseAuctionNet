@@ -1,6 +1,6 @@
 ## Introduction
 
-This is the Pytorch implementation of our paper:`Transformer‐Based Revenue‐Optimal Reverse Auction Mechanism Design for Task Allocation in Mobile Crowdsensing` .
+This is the Pytorch implementation of our paper:`Revenue-Optimal Reverse Auction for Task Allocation in Mobile Crowdsensing through Attention Transformer` .
 
 
 ## Requirements
